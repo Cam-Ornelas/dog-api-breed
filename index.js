@@ -11,8 +11,8 @@ function getDogImage(breed) {
 // Shows images
 function displayResults(responseJson, breed) {
     console.log(responseJson.message);
-    if (responseJson.message === "Breed not found") {
-        $('.results').append(`<h2>Breed not found- please try again.`);
+    if (responseJson.status === "error") {
+        $('.results').append(`<h2>Breed not found- please try again.</h2>`);
     }
     else {
         $('.results').append(`<h2>Here is a ${breed}: </h2>

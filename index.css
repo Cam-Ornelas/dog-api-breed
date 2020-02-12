@@ -14,3 +14,8 @@ body {
 .hidden {
   display: none;
 }
+
+.submit-button {
+  display: block;
+  margin-top: 10px;
+}
